@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --primary-color: #4338CA ;
+    --text-color: #fff;
+    
+}
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header{
+    height: 4rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.header-text{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: larger;
+}
+/* body  */
+.container{
+    background-color: var(--background-color);
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin: 2rem auto;
+}
+.quiz-container{
+    width: 80%;
+    padding: 2rem;
+    border: 2px solid var(--primary-color);
+    margin: 0rem auto 1rem auto;
+   
+}
+p{
+    margin-bottom: .5rem ;
+}
+/* label  */
+label{
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Button */
+button{
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid black;
+    margin: 10px auto 10px;
+}
+/* Output */
+#output{
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 2px;
+    font-weight: 700;   
+}
+/* Footer */
+.footer{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.footer-heading{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: bold;
+    padding-bottom: 5px;
+}
+.icon{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.8rem;
+    padding-bottom: 1rem;
+}
