@@ -3,6 +3,7 @@
 :root{
     --primary-color: #4338CA ;
     --text-color: #fff;
+    --border-color: black;    
     
 }
 *{
@@ -22,6 +23,10 @@ header{
     font-weight: bold;
     font-size: larger;
 }
+.item-active{
+    border-bottom: 2px solid var(--text-color); 
+    font-weight: bold;
+}
  /* body  */
 .container{
     background-color: var(--background-color);
@@ -33,10 +38,31 @@ header{
     align-items: center ;
     margin: 2rem auto;
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-pill{
+    text-align: right;
+}
+li{
+    display: inline;
+}
+
+.link{
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    }
 /* label and input boxes */
 label{
     font-size: 1.3rem;
     padding: 1rem 1rem 0rem;
+    font-weight: 700;
 }
 input{
     font-size: 1.1rem;
@@ -45,14 +71,16 @@ input{
     padding: 1rem;
     height: 25px;
     margin-bottom: 0.5rem;
+    border: 1px solid var(--border-color);
 }
 /* Button */
 button{
     font-size: 1.3rem;
+    font-weight: 700;
     padding: 0.5rem 1rem;
     display: block;
     font-size: 1rem;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     margin: 10px auto 10px;
 }
 /* Output */
@@ -60,8 +88,7 @@ button{
     font-size: 1.5rem;
     padding: 1rem;
     margin-bottom: 2px;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
 /* Footer */
 .footer{

@@ -7,6 +7,8 @@ function validateInputs(){
     if((input[0].value) === '' || (input[1].value) === '' || (input[2].value) === '')
     return "empty";
 }
+function straightLine(){
+}
 
 // Function to calculate sum of three angles
 function calculateSumOfAngles(data1,data2,data3){
@@ -19,9 +21,9 @@ function calculateSumOfAngles(data1,data2,data3){
 //logic to check if their sum is equal to 180 
 function checkAngles(sumOfAngles){
     if(sumOfAngles === 180){
-        output.innerText = "They form a Triangle";
+        output.innerText = "They form a Triangle ";
     }else{
-        output.innerText = "They dont form a Triangle";
+        output.innerText = "They don't form a Triangle";
     }
 }
 
@@ -31,6 +33,9 @@ function isTriangle (){
        if(a === "empty"){
         output.innerText = "Enter all three angles";
        }     
+       else if((input[0].value) === '180' || (input[1].value) === '180' || (input[2].value) === '180'){
+        output.innerText = "It's a Straight line !";
+       }       
        else
         {
         var total = calculateSumOfAngles((input[0].value), (input[1].value),(input[2].value)); 
@@ -38,3 +43,4 @@ function isTriangle (){
        }       
 }
 buttonCheck.addEventListener("click", isTriangle)
+

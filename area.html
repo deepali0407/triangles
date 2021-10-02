@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triangle</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Area</title>
+    <link rel="stylesheet" href="area.css">
     <script src="https://kit.fontawesome.com/ee99940e7a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <nav class="header-text">dsedeveloper
             <ul class="nav-pill">
-                <li><a class="link item-active" href="index.html">Is Triangle?</a></li>
+                <li><a class="link" href="index.html">Is Triangle?</a></li>
                 <li><a class="link" href="quiz.html">Quiz</a></li>
                 <li><a class="link" href="hypotenuse.html">Hypotenuse</a></li>
-                <li><a class="link" href="area.html">Area</a></li>
+                <li><a class="link item-active" href="area.html" >Area</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <h1>Triangles 📐</h1>
-        <label for="angle">Enter 1st Angle :</label>
-        <input type="number" min="0" class="angle">
-        <label for="angle">Enter 2nd Angle :</label>
-        <input type="number" min="0" class="angle">
-        <label for="angle">Enter 3rd Angle :</label>
-        <input type="number" min="0" class="angle">
-        <button id="btn-check">Is Triangle? </button>
-        <h2 id="output"></h2>
+    <h1>Check Area of Triangle</h1>
+    <h2>Area = 1/2 (Base*Height)</h2>
+        <div class="input-container">
+            <label>Base(in cms)
+            <input type="number" min="0" id="base"></label>
+        </div>
+        <div class="input-container">
+            <label >Height(in cms)
+            <input type="number" min="0" id="height"></label>
+        </div>
+        
+        <button id="area-btn">Check Area</button>
+        <div id="output"></div>
     </div>
     <footer class="footer">
         <p class="footer-heading"> Deepali | 2021 </p> 
@@ -37,6 +42,6 @@
         <a class="icon" href=""><i class="fab fa-twitter-square fa-2x"></i></a>
     </footer>
 
-<script src="index.js"></script>    
+<script src="area.js"></script>    
 </body>
 </html>

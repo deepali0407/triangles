@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hypotenuse ques</title>
     <link rel="stylesheet" href="hypotenuse.css">
-    <!-- <script>
-       function myfunction(){
-           console.log("clicked");
-       }
-    </script> -->
+    <script src="https://kit.fontawesome.com/ee99940e7a.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
+    <header>
+        <nav class="header-text">dsedeveloper
+            <ul class="nav-pill">
+                <li><a class="link " href="index.html">Is Triangle?</a></li>
+                <li><a class="link " href="quiz.html">Quiz</a></li>
+                <li><a class="link item-active " href="hypotenuse.html">Hypotenuse</a></li>
+                <li><a class="link " href="area.html">Area</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <label>a=</label>
-        <input type="number" class="angles"/>
-        <label>b=</label>
-        <input type="number" class="angles"/>
-        <button id="check-button" >Check Hypotenuse</button>
-        <div id="output"></div>
+        <h1>Check Hypotenuse 📐</h1>
+        <h2>Length of Hypotenuse = sqrt(a² + b²)</h2>
+        <div class="input-container">
+            <label>a=
+            <input type="number" min="0" class="angles"/></label>
+        </div>
+        <div class="input-container">
+            <label>b=
+            <input type="number" min="0" class="angles"/></label>
+        </div>
+            <button id="check-button" >Check Hypotenuse</button>
+            <div id="output"></div>
     </div>
+    <footer class="footer">
+        <p class="footer-heading"> Deepali | 2021 </p> 
+        <a class="icon" href="https://github.com/deepali0407" ><i class="fab fa-github-square fa-2x"></i></a>
+        <a class="icon" href=""><i class="fab fa-linkedin fa-2x"></i></a>
+        <a class="icon" href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+    </footer>
    
 <script type="text/javascript" src="hypotenuse.js"></script>
 </body>
